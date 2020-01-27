@@ -6,9 +6,10 @@
   "scripts": {
     "start": "parcel src/index.html --hmr-port 1235",
     "serve-geocode-search": "parcel src/geocode-search.html --hmr-port 1235",
-    "build": "npm run clear-dist && parcel build --public-url /commons-hub-frontend/ src/index.html src/GeocodeSearchWidget.tsx",
-    "build-local": "npm run clear-dist && parcel build --public-url http://localhost:1234 src/index.html src/GeocodeSearchWidget.tsx",
-    "clear-dist": "rimraf \"./dist/*\"",
+    "build": "npm run clear-dist && parcel build --out-dir ~/html/commons-hub-frontend --public-url /commons-hub-frontend/ src/index.html src/GeocodeSearchWidget.tsx",
+    "build-local": "npm run clear-dist-local && parcel build --public-url http://localhost:1234 src/index.html src/GeocodeSearchWidget.tsx",
+    "clear-dist": "rimraf \"~/html/commons-hub-frontend/*\"",
+    "clear-dist-local": "rimraf \"./dist/*\"",
     "postbuild": "react-snap",
     "trans:compile": "tsc -p . --target ES6 --module es6 --jsx preserve --outDir src/extracted",
     "trans:extract": "babel ./src/extracted",
