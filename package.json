@@ -27,7 +27,7 @@
   "dependencies": {
     "@types/node": "^12.6.8",
     "commons-api": "github:wielebenwir/commons-api#v0.7.3-beta",
-    "cross-fetch": "^3.0.4",
+    "cross-fetch": "^3.1.5",
     "formik": "^1.5.8",
     "history": "^4.9.0",
     "i18next": "^17.1.0",
